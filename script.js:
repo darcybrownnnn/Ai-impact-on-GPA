@@ -1,4 +1,4 @@
-Papa.parse('data.csv', {
+Papa.parse('gpascores.cvs', {
   download: true,
   header: true,
   skipEmptyLines: true,
