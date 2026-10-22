@@ -12,8 +12,8 @@ Papa.parse('gpascores.csv', {
       const tr = document.createElement('tr');
 
       tr.innerHTML = `
-        <td>${parseFloat(row.GPA_Baseline).toFixed(2)}</td>
-        <td>${parseFloat(row.GPA_Post_AI).toFixed(2)}</td>
+        <td>${parseFloat(Number(row.GPA_Baseline)).toFixed(2)}</td>
+        <td>${parseFloat(Number(row.GPA_Post_AI)).toFixed(2)}</td>
       `;
 
       tbody.appendChild(tr);
